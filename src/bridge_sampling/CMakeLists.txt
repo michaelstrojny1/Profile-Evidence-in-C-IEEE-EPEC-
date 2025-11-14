@@ -1,0 +1,1 @@
+add_library(bridge_sampling bridge_sampling.cpp)

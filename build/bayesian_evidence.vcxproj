@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63A35114-B705-324C-88A8-14B5673E12F0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>bayesian_evidence</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\micha\demos\bayesian_evidence\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bayesian_evidence.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bayesian_evidence</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\micha\demos\bayesian_evidence\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bayesian_evidence.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bayesian_evidence</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\micha\demos\bayesian_evidence\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bayesian_evidence.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bayesian_evidence</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\micha\demos\bayesian_evidence\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bayesian_evidence.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bayesian_evidence</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/buildtrees/eigen3/src/3.4.1-0ff0cf177d.clean"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>src\model_dyn\Debug\model_dyn.lib;src\obs_model\Debug\obs_model.lib;src\loglik\Debug\loglik.lib;src\logprior\Debug\logprior.lib;src\optimizer\Debug\optimizer.lib;src\hessian\Debug\hessian.lib;src\bridge_sampling\Debug\bridge_sampling.lib;src\cox_reid\Debug\cox_reid.lib;src\ais\Debug\ais.lib;src\nuclear_compliance\Debug\nuclear_compliance.lib;src\audit\Debug\audit.lib;src\dmis_proposal\Debug\dmis_proposal.lib;src\importance_weights\Debug\importance_weights.lib;src\psis\Debug\psis.lib;src\orchestration\Debug\orchestration.lib;src\optimizer\Debug\optimizer.lib;src\loglik\Debug\loglik.lib;src\obs_model\Debug\obs_model.lib;src\model_dyn\Debug\model_dyn.lib;src\logprior\Debug\logprior.lib;src\hessian\Debug\hessian.lib;src\bridge_sampling\Debug\bridge_sampling.lib;src\dmis_proposal\Debug\dmis_proposal.lib;src\importance_weights\Debug\importance_weights.lib;src\psis\Debug\psis.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/micha/demos/bayesian_evidence/build/Debug/bayesian_evidence.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/micha/demos/bayesian_evidence/build/Debug/bayesian_evidence.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/buildtrees/eigen3/src/3.4.1-0ff0cf177d.clean"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>src\model_dyn\Release\model_dyn.lib;src\obs_model\Release\obs_model.lib;src\loglik\Release\loglik.lib;src\logprior\Release\logprior.lib;src\optimizer\Release\optimizer.lib;src\hessian\Release\hessian.lib;src\bridge_sampling\Release\bridge_sampling.lib;src\cox_reid\Release\cox_reid.lib;src\ais\Release\ais.lib;src\nuclear_compliance\Release\nuclear_compliance.lib;src\audit\Release\audit.lib;src\dmis_proposal\Release\dmis_proposal.lib;src\importance_weights\Release\importance_weights.lib;src\psis\Release\psis.lib;src\orchestration\Release\orchestration.lib;src\optimizer\Release\optimizer.lib;src\loglik\Release\loglik.lib;src\obs_model\Release\obs_model.lib;src\model_dyn\Release\model_dyn.lib;src\logprior\Release\logprior.lib;src\hessian\Release\hessian.lib;src\bridge_sampling\Release\bridge_sampling.lib;src\dmis_proposal\Release\dmis_proposal.lib;src\importance_weights\Release\importance_weights.lib;src\psis\Release\psis.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/micha/demos/bayesian_evidence/build/Release/bayesian_evidence.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/micha/demos/bayesian_evidence/build/Release/bayesian_evidence.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/buildtrees/eigen3/src/3.4.1-0ff0cf177d.clean"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>src\model_dyn\MinSizeRel\model_dyn.lib;src\obs_model\MinSizeRel\obs_model.lib;src\loglik\MinSizeRel\loglik.lib;src\logprior\MinSizeRel\logprior.lib;src\optimizer\MinSizeRel\optimizer.lib;src\hessian\MinSizeRel\hessian.lib;src\bridge_sampling\MinSizeRel\bridge_sampling.lib;src\cox_reid\MinSizeRel\cox_reid.lib;src\ais\MinSizeRel\ais.lib;src\nuclear_compliance\MinSizeRel\nuclear_compliance.lib;src\audit\MinSizeRel\audit.lib;src\dmis_proposal\MinSizeRel\dmis_proposal.lib;src\importance_weights\MinSizeRel\importance_weights.lib;src\psis\MinSizeRel\psis.lib;src\orchestration\MinSizeRel\orchestration.lib;src\optimizer\MinSizeRel\optimizer.lib;src\loglik\MinSizeRel\loglik.lib;src\obs_model\MinSizeRel\obs_model.lib;src\model_dyn\MinSizeRel\model_dyn.lib;src\logprior\MinSizeRel\logprior.lib;src\hessian\MinSizeRel\hessian.lib;src\bridge_sampling\MinSizeRel\bridge_sampling.lib;src\dmis_proposal\MinSizeRel\dmis_proposal.lib;src\importance_weights\MinSizeRel\importance_weights.lib;src\psis\MinSizeRel\psis.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/micha/demos/bayesian_evidence/build/MinSizeRel/bayesian_evidence.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/micha/demos/bayesian_evidence/build/MinSizeRel/bayesian_evidence.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/buildtrees/eigen3/src/3.4.1-0ff0cf177d.clean"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\micha\demos\bayesian_evidence\include;C:\vcpkg\buildtrees\include\eigen3;C:\Users\micha\demos\bayesian_evidence\src\model_dyn\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\obs_model\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\loglik\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\logprior\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\optimizer\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\hessian\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\dmis_proposal\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\importance_weights\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\psis\..\..\include;C:\Users\micha\demos\bayesian_evidence\src\orchestration\..\..\include;C:\vcpkg\buildtrees\eigen3\src\3.4.1-0ff0cf177d.clean;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>src\model_dyn\RelWithDebInfo\model_dyn.lib;src\obs_model\RelWithDebInfo\obs_model.lib;src\loglik\RelWithDebInfo\loglik.lib;src\logprior\RelWithDebInfo\logprior.lib;src\optimizer\RelWithDebInfo\optimizer.lib;src\hessian\RelWithDebInfo\hessian.lib;src\bridge_sampling\RelWithDebInfo\bridge_sampling.lib;src\cox_reid\RelWithDebInfo\cox_reid.lib;src\ais\RelWithDebInfo\ais.lib;src\nuclear_compliance\RelWithDebInfo\nuclear_compliance.lib;src\audit\RelWithDebInfo\audit.lib;src\dmis_proposal\RelWithDebInfo\dmis_proposal.lib;src\importance_weights\RelWithDebInfo\importance_weights.lib;src\psis\RelWithDebInfo\psis.lib;src\orchestration\RelWithDebInfo\orchestration.lib;src\optimizer\RelWithDebInfo\optimizer.lib;src\loglik\RelWithDebInfo\loglik.lib;src\obs_model\RelWithDebInfo\obs_model.lib;src\model_dyn\RelWithDebInfo\model_dyn.lib;src\logprior\RelWithDebInfo\logprior.lib;src\hessian\RelWithDebInfo\hessian.lib;src\bridge_sampling\RelWithDebInfo\bridge_sampling.lib;src\dmis_proposal\RelWithDebInfo\dmis_proposal.lib;src\importance_weights\RelWithDebInfo\importance_weights.lib;src\psis\RelWithDebInfo\psis.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/micha/demos/bayesian_evidence/build/RelWithDebInfo/bayesian_evidence.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/micha/demos/bayesian_evidence/build/RelWithDebInfo/bayesian_evidence.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\micha\demos\bayesian_evidence\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/micha/demos/bayesian_evidence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/micha/demos/bayesian_evidence -BC:/Users/micha/demos/bayesian_evidence/build --check-stamp-file C:/Users/micha/demos/bayesian_evidence/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeSystem.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Config.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3ConfigVersion.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Targets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/micha/demos/bayesian_evidence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/micha/demos/bayesian_evidence -BC:/Users/micha/demos/bayesian_evidence/build --check-stamp-file C:/Users/micha/demos/bayesian_evidence/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeSystem.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Config.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3ConfigVersion.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Targets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/micha/demos/bayesian_evidence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/micha/demos/bayesian_evidence -BC:/Users/micha/demos/bayesian_evidence/build --check-stamp-file C:/Users/micha/demos/bayesian_evidence/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeSystem.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Config.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3ConfigVersion.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Targets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/micha/demos/bayesian_evidence/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/micha/demos/bayesian_evidence -BC:/Users/micha/demos/bayesian_evidence/build --check-stamp-file C:/Users/micha/demos/bayesian_evidence/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\4.1.2\CMakeSystem.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Config.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3ConfigVersion.cmake;C:\vcpkg\buildtrees\eigen3\x64-windows-dbg\Eigen3Targets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\micha\demos\bayesian_evidence\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\micha\demos\bayesian_evidence\main.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\ZERO_CHECK.vcxproj">
+      <Project>{6156A13D-E6F1-3DF3-8F87-43B045477BD1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\ais\ais.vcxproj">
+      <Project>{9DD44372-9B48-3F7A-8D9C-D174BB63644B}</Project>
+      <Name>ais</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\audit\audit.vcxproj">
+      <Project>{2C0B31EA-7456-337D-A092-B5D6973C16AC}</Project>
+      <Name>audit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\bridge_sampling\bridge_sampling.vcxproj">
+      <Project>{4DCCC818-3D80-39F4-B64A-4370F7153847}</Project>
+      <Name>bridge_sampling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\cox_reid\cox_reid.vcxproj">
+      <Project>{A01A08B6-B4E4-3B2D-B725-CF82B2AA27B0}</Project>
+      <Name>cox_reid</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\dmis_proposal\dmis_proposal.vcxproj">
+      <Project>{936D4403-7706-33A8-95F3-04D6399C5A23}</Project>
+      <Name>dmis_proposal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\hessian\hessian.vcxproj">
+      <Project>{DEE312E8-DE13-355C-8D0F-D4789E86DE25}</Project>
+      <Name>hessian</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\importance_weights\importance_weights.vcxproj">
+      <Project>{5BBC721C-462D-3B91-BF0C-A7095A538E6D}</Project>
+      <Name>importance_weights</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\loglik\loglik.vcxproj">
+      <Project>{ED5AD523-E802-38BC-95C1-9DAE26164581}</Project>
+      <Name>loglik</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\logprior\logprior.vcxproj">
+      <Project>{78874AB5-4CDC-3D37-AD7F-050C0AFD139D}</Project>
+      <Name>logprior</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\model_dyn\model_dyn.vcxproj">
+      <Project>{89D2E8EA-4263-3EDE-8074-D7160064A322}</Project>
+      <Name>model_dyn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\nuclear_compliance\nuclear_compliance.vcxproj">
+      <Project>{86DD6E2D-52AA-323D-814F-43CD4AF48BDE}</Project>
+      <Name>nuclear_compliance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\obs_model\obs_model.vcxproj">
+      <Project>{E7C43EEB-80ED-39B5-B98B-62598548A526}</Project>
+      <Name>obs_model</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\optimizer\optimizer.vcxproj">
+      <Project>{21E8ED78-F96C-344C-A737-5718BDA3036F}</Project>
+      <Name>optimizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\orchestration\orchestration.vcxproj">
+      <Project>{65D02254-077C-3DBD-B239-27AE724B5CB3}</Project>
+      <Name>orchestration</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\micha\demos\bayesian_evidence\build\src\psis\psis.vcxproj">
+      <Project>{234C0355-624B-3445-8A61-CA416A071ADE}</Project>
+      <Name>psis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

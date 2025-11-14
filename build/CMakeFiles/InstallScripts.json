@@ -1,0 +1,22 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/micha/demos/bayesian_evidence/build/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/model_dyn/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/obs_model/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/loglik/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/logprior/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/optimizer/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/hessian/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/bridge_sampling/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/cox_reid/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/ais/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/nuclear_compliance/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/audit/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/dmis_proposal/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/importance_weights/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/psis/cmake_install.cmake",
+		"C:/Users/micha/demos/bayesian_evidence/build/src/orchestration/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

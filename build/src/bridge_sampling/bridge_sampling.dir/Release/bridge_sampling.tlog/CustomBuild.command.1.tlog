@@ -1,0 +1,10 @@
+^C:\USERS\MICHA\DEMOS\BAYESIAN_EVIDENCE\SRC\BRIDGE_SAMPLING\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/micha/demos/bayesian_evidence -BC:/Users/micha/demos/bayesian_evidence/build --check-stamp-file C:/Users/micha/demos/bayesian_evidence/build/src/bridge_sampling/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
